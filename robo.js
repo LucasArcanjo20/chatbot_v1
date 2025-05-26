@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Criar pasta para autenticação se não existir
-const AUTH_DIR = path.join(__dirname, '.wwebjs_auth');
+const AUTH_DIR = '/data/.wwebjs_auth';
 if (!fs.existsSync(AUTH_DIR)) {
     fs.mkdirSync(AUTH_DIR, { recursive: true });
 }
